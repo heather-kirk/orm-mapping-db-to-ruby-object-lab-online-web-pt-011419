@@ -89,7 +89,7 @@ class Student
     DB[:conn].execute(sql, x)
   end 
   
-  def self.first_student_in_grade_10
+  def self.first_student_in_grade_10(first)
     sql = <<-SQL
     SELECT * FROM students
     WHERE grade = 10
