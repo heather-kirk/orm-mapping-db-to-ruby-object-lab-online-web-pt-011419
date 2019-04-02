@@ -82,7 +82,7 @@ class Student
     sql = <<-SQL
     SELECT * FROM students
     WHERE grade = 10
-    LIMIT
+    ORDER BY students
     SQL
     
     DB[:conn].execute(sql, x)
